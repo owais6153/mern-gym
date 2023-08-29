@@ -1,0 +1,132 @@
+.profileCard{
+    &.card {
+        background: #384562; border-radius: 12px;
+        .card-body {
+            figure{
+                &.userImg {
+                    width: 111px;
+                    height: 111px;
+                    img{
+                        &.card-img-top {width: 100%;height: auto;object-fit: cover;}
+                    }
+                }
+            }
+
+            .info {
+                h4{
+                    &.card-title {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #fff;
+                    }
+                }
+                p{
+                    &.card-text {
+                        label {
+                            font-size: 12px; color: #fff; opacity: 0.6; margin: 0; padding: 0;
+                        }
+                        .desc {
+                            font-size: 14px; color: #fff; font-weight: 500; display: block;
+                        }
+                    }
+                }
+            }
+
+            .reports {
+                button{
+                    &.btn {
+                        width: 100%; color: #fff; border: 1px solid #61A1F8; font-size: 12px;
+                        font-weight: 500; text-transform: uppercase; height: 39px; margin: 5px 0;
+                        &:hover {border-color: #fff;color: #fff;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+ul{
+    &.breadCrumbList {
+        padding: 0; list-style: none; display: flex; justify-content: flex-start; margin: 0 -15px;
+        li {
+            margin: 0 15px;
+            a {
+                font-size: 12px; font-weight: 500; opacity: 0.4;
+            }
+            &:after {
+                content: ""; font-family: 'FontAwesome'; margin-left: 12px; 
+                position: absolute; margin-top: 2px; color: #fff; opacity: 0.8;
+            }
+            &:last-child{
+                a {
+                    opacity: 1;
+                }
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+
+
+.modal.modal-bmi {
+    background: #1a233694;
+    .modal-dialog {
+        max-width: 700px;
+        .modal-content {
+            background: #384562; border-radius: 12px; padding: 10px;
+            .modal-header {
+                h5{
+                    &.modal-title {
+                        width: 100%;
+                    }
+                    figure{
+                        &.icon {
+                            width: 36px; height: 36px; border-radius: 50%; background: #4F76D9; 
+                            display: flex; align-items: center; justify-content: center; margin: 0;
+                        }
+                    }
+                    h4{
+                        &.card-title {width: 100%;height: 100%;margin: 0;}
+                    }
+                }
+            }
+
+            .modal-body {
+                .preferrences {
+                    h5 {
+                        font-size: 16px; font-weight: 500; margin-bottom: 5px;
+                    }
+
+                    ul {
+                        padding: 0; list-style: none;
+                        li {
+                            font-size: 14px; font-weight: 400; margin-left: 15px; color: #ffffff70;
+                            &:before {
+                                content: ""; width: 12px; height: 12px; background: #61A1F8; position: absolute;
+                                margin-left: -20px; margin-top: 7px; border-radius: 50%; opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                button{
+                    &.btn{
+                        &.close {
+                            margin: 0 auto 30px; width: 210px; height: 39px;
+                            font-size: 12px; color: #fff; opacity: 1; background: #375297;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+select#category {
+  height: 100px;
+}

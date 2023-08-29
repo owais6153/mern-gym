@@ -1,0 +1,60 @@
+.shortInfo {
+    display: flex; align-items: center; justify-content: flex-end; margin-right: -15px;
+    .titles {
+        h5 {
+            font-size: 12px; color: #61A1F8; font-weight: 500; margin: 0; 
+            text-transform: uppercase; text-align: right;
+        }
+        h4 {
+            font-size: 18px; color: #fff; font-weight: 700; margin: 0;
+            text-transform: uppercase; text-align: right;
+        }
+        h6 {
+            font-size: 12px; color: #fff; font-weight: 500; margin: 0;
+            text-transform: uppercase; text-align: right; opacity: 0.6;
+        }
+    }
+
+    .userImg {
+        margin-left: 15px;
+        figure {
+            margin: 0; width: 52px; height: 52px;
+            overflow: hidden; border-radius: 50%;
+        }
+    }
+}
+
+
+.dropdown{
+    &.login-dropdown {
+        margin: 0;
+        button{
+            &.btn-secondary{
+                background: transparent !important; padding: 0 15px 0 0; margin: 0 -15px 0 0; height: 60px;
+                &:focus{
+                    background-image: none !important;
+                }
+                &:after {
+                    content: ""; border: 0; margin: 0;
+                }
+                &:hover {
+                    background: transparent; box-shadow: 0 0 0; background-image: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+.backdrop {
+    position: fixed; top: 0; width: calc(100% - 280px); height: 100vh; display: none; align-items: center; justify-content: center; 
+    background: #fff9f9a8; z-index: 1060;
+    &.on{
+        display: flex;
+    }
+    .spinner-border-xl{
+        &.spinner-border {
+            width: 100px; height: 100px;
+        }
+    }
+}

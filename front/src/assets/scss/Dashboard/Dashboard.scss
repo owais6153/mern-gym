@@ -1,0 +1,136 @@
+.activitycards {
+    &.card{
+        background: radial-gradient(100% 100% at 60.51% 0%, #a3caff33 10%, rgb(255 255 255 / 11%) 80%, rgb(167 204 255 / 12%) 100%) ;
+        border-radius: 12px;
+        .icon {
+            figure {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .card-body {
+            .card-title {
+                margin: 0 !important;
+                h3 {font-size: 24px;font-weight: 700;margin: 0;}
+            }
+            .card-text {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.chartCard{
+    &.card {
+        background: #3b4559; border-radius: 12px; padding: 20px; opacity: 0.4; height: 164px; opacity: 1;
+        .chart {
+            display: flex; align-items: center; height: 100%; justify-content: center; width: 100%;
+            h1 {
+                margin: 0; font-size: 17px; color: #fff;
+            }
+        }
+
+        .calory {
+            height: 124px; display: flex; justify-content: flex-start; 
+            flex-wrap: wrap; align-content: center;
+            .item {
+                p {
+                    font-size: 12px; color: #fff; font-weight: 500; margin: 0;
+                    &.h6 {
+                        font-size: 16px; font-weight: 700; text-transform: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tpf-card{
+    &.card {
+        .card-header {
+            h4.card-title {
+                font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: flex-start; margin: 0;
+                span.badge {
+                    margin-left: 10px;
+                }
+            }
+
+            .filter {
+                display: flex; align-items: center; justify-content: flex-end;
+                .searchBox {
+                    background: #5d6069; border-radius: 6px; padding: 0 10px; display: flex; height: 38px; width: 164px;
+                    input {
+                        background: transparent; color: #ffffff; height: 100%; font-size: 12px; padding: 0;
+                        &::placeholder {
+                            color: #fff;
+                        }
+                    }
+                    .no-border.form-group {margin: 0;}
+                    button {
+                        color: #fff; margin: 0; font-size: 13px;
+                        padding: 0; width: 40px; background: transparent; outline: 0;
+                        &:hover {
+                            background-color: transparent !important; box-shadow: 0 0 0 0; background-image: none !important;
+                        }
+                    }
+                }
+            }
+
+            .addNew {
+                margin-left: 10px;
+                button{
+                    &.btn {
+                        background: #375297; font-size: 12px; font-weight: 700;
+                        height: 38px; border-radius: 6px; padding: 0 10px; text-transform: uppercase;
+                        i {
+                            font-size: 14px; margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card-body{
+            table{
+                &.tpf-table.table {
+                    tr {
+                        th {
+                            padding: 5px; font-size: 12px; font-weight: 500; color: #ffffff;
+                        }
+                        td {
+                            font-size: 12px; font-weight: 500; color: #fff !important; padding: 5px;
+                            &.thumbnail {
+                                width: 40px; overflow: hidden;
+                                figure{
+                                    &.tpf-list-img {
+                                        width: 40px; height: 40px; overflow: hidden; object-fit: cover; border-radius: 8px; margin: 0;
+                                        img {width: 100%;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tpf-slider{
+    &.slick-slider{
+        overflow: hidden;
+        .slick-list {
+            margin: 0 0 0 -30px;
+            .slick-track {
+                margin: 0 -15px;
+                .slick-slide{
+                    &.slick-active{
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.pagination {
+    .page-link{
+        border: 0; color: #61A1F8;
+        &:hover {
+            z-index: 2;
+            color: #61a1f880;
+            text-decoration: none;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .pages {
+        color: #fff; opacity: 0.4; margin: 0 8rem; font-size: 12px;
+        a {
+            color: #fff; opacity: 1;
+        }
+    }
+}
